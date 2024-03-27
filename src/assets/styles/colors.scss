@@ -1,0 +1,9 @@
+$primary-color:#FF6060;
+$secondary-color: #000;
+
+
+
+@mixin colors {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+}
