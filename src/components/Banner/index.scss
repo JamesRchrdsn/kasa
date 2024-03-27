@@ -1,0 +1,32 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 1540px;
+        height: 223px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .banner-home {
+        img {
+            filter: brightness(35%);
+        }
+
+        .banner-text {
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 34%;
+            left: 32%;
+            font-size: 48px;
+            font-weight: 700;
+        }
+    }
+
+    .banner-about {
+        filter: brightness(70%);
+    }
+}
