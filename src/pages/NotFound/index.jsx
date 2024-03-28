@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NotFound() {
   return (
-    <div>
-      <h1>Erreur 404</h1>
-      <p>Désolé, la page que vous recherchez est introuvable.</p>
+    <div className="Error">
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <Link to="/" className="ErrorLink">
+        Retourner sur la page d’accueil
+      </Link>
     </div>
   );
 }

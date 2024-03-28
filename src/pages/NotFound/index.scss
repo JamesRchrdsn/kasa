@@ -1,0 +1,23 @@
+.Error {
+    color: #FF6060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 139px;
+
+    h1 {
+        margin: 0;
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 36px;
+    }
+
+    .ErrorLink {
+        color: #000;
+        font-size: 18px;
+        margin-bottom: 139px;
+    }
+}

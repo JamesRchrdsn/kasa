@@ -1,13 +1,10 @@
 import React from "react";
+import CardList from "../../components/Cards";
 
 function Home() {
   return (
     <div>
-      <h1>Accueil</h1>
-      <p>
-        Bienvenue sur notre site de location de logements. Découvrez nos offres
-        dès maintenant !
-      </p>
+      <CardList />
     </div>
   );
 }
