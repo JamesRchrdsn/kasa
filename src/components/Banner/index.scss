@@ -15,12 +15,14 @@
             filter: brightness(35%);
         }
 
+        position: relative;
+
         .banner-text {
             text-align: center;
             color: white;
             position: absolute;
-            top: 34%;
-            left: 32%;
+            top: 37%;
+            left: 25%;
             font-size: 48px;
             font-weight: 700;
         }

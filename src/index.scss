@@ -2,8 +2,10 @@
 @import "./components/Footer/index.scss";
 @import "./components/Banner/index.scss";
 @import "./pages/NotFound/index.scss";
+@import "./components/Cards/index.scss";
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  margin: 0;
 }
