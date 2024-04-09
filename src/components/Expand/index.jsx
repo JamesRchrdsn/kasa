@@ -11,10 +11,11 @@ function ExpandableBanner({ closedText, expandedText }) {
 
   return (
     <div className="expandable-banner">
-      <div className="banner-header" onClick={toggleExpand}>
+      <div className="banner-header">
         {closedText}
         <span
           className={`arrow ${isExpanded ? "expanded" : ""} ${arrowDirection}`}
+          onClick={toggleExpand}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

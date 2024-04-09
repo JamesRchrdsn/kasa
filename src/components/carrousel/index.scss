@@ -1,0 +1,30 @@
+.carousel {
+    width: auto;
+    height: 415px;
+    display: flex;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 36%;
+    }
+
+    .arrow-left {
+        left: 1.5%
+    }
+
+    .arrow-right {
+        right: 1.5%;
+    }
+}

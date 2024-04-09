@@ -1,0 +1,106 @@
+.all-components {
+    margin: 50px 250px;
+    width: auto;
+
+    .carrousel {
+        margin-bottom: 30px;
+    }
+
+    .titleproperty {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #FF6060;
+        align-items: center;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .property {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                border-radius: 50%;
+                object-fit: cover;
+                height: 64px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .location {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .key-rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        .keywords {
+            display: flex;
+            align-items: center;
+
+            .keyword {
+                margin-right: 10px;
+                background-color: #FF6060;
+                padding: 3px 40px 2px 40px;
+                border-radius: 10px;
+                color: white;
+                height: 25px;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 174%;
+            }
+        }
+
+        .rating-stars {
+            width: 196px;
+            height: 36px;
+            display: flex;
+            gap: 10px;
+
+            svg {
+                width: 196px;
+                height: 36px;
+            }
+
+        }
+    }
+
+    .expandselect {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 44%;
+
+            div {
+                width: 94.4%;
+            }
+        }
+
+        .expanded-content {
+            &.expanded {
+                width: 100%;
+            }
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
