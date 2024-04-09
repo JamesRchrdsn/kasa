@@ -4,9 +4,19 @@
     flex-direction: row;
     justify-content: space-between;
 
+    @media screen and (max-width: 768px) {
+        margin: 20px;
+        justify-content: space-around;
+    }
+
     .logo {
         width: 212px;
         height: 65px;
+
+        @media screen and (max-width: 768px) {
+            width: 145px;
+            height: 46.88px;
+        }
     }
 
     ul {
@@ -15,12 +25,20 @@
         gap: 57px;
         list-style-type: none;
 
+        @media screen and (max-width: 768px) {
+            gap: 26px;
+        }
+
         li {
             a {
                 text-decoration: none;
                 color: #000;
                 font-size: 24px;
                 font-weight: 500;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 3vw;
+                }
             }
 
             .active {

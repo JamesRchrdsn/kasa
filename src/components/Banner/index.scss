@@ -2,33 +2,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 
     img {
-        width: 1540px;
         height: 223px;
         border-radius: 25px;
         object-fit: cover;
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            height: 111px;
+            display: flex;
+            align-items: flex-start;
+        }
     }
 
     .banner-home {
+        width: 100%;
+
         img {
             filter: brightness(35%);
         }
 
-        position: relative;
-
         .banner-text {
-            text-align: center;
-            color: white;
             position: absolute;
-            top: 37%;
-            left: 25%;
-            font-size: 48px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.62vw;
             font-weight: 700;
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                text-align: left;
+                left: 37%;
+            }
         }
     }
 
     .banner-about {
+        width: 100%;
         filter: brightness(70%);
     }
 }

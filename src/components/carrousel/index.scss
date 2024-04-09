@@ -4,6 +4,10 @@
     display: flex;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        height: 255px;
+    }
+
     img {
         object-fit: cover;
         object-position: center;
@@ -26,5 +30,12 @@
 
     .arrow-right {
         right: 1.5%;
+    }
+
+    .image-count {
+        position: absolute;
+        bottom: 5%;
+        left: 49%;
+        color: white;
     }
 }

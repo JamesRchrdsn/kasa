@@ -2,8 +2,18 @@
     margin: 50px 250px;
     width: auto;
 
+    @media screen and (max-width: 768px) {
+        margin: 27px 20px 15px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
     .carrousel {
         margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 15px;
+        }
     }
 
     .titleproperty {
@@ -13,10 +23,18 @@
         color: #FF6060;
         align-items: center;
 
+
+
         h2 {
             font-size: 36px;
             font-weight: 500;
             margin: 0;
+
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
         }
 
         .property {
@@ -24,6 +42,7 @@
             flex-direction: row;
             align-items: center;
             gap: 10px;
+
 
             img {
                 border-radius: 50%;
@@ -40,6 +59,11 @@
     .location {
         margin-top: 0;
         font-size: 18px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+
     }
 
     .key-rating {
@@ -48,9 +72,13 @@
         justify-content: space-between;
         margin-bottom: 24px;
 
+
+
         .keywords {
             display: flex;
             align-items: center;
+
+
 
             .keyword {
                 margin-right: 10px;
@@ -72,6 +100,9 @@
             display: flex;
             gap: 10px;
 
+
+
+
             svg {
                 width: 196px;
                 height: 36px;
@@ -84,8 +115,19 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+        }
+
         div {
             width: 44%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
 
             div {
                 width: 94.4%;
@@ -101,6 +143,58 @@
         p {
             display: flex;
             flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobil-prop {
+        .keywords {
+            margin: 10px 0 16px 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            .keyword {
+                margin-right: 10px;
+                background-color: #FF6060;
+                padding: 2px 29px;
+                border-radius: 5px;
+                color: white;
+                height: 18px;
+                display: inline-block;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 174%;
+            }
+        }
+
+        .rating-host {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .rating-stars {
+                height: 18px;
+                width: 98px;
+            }
+
+            .property {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: #FF6060;
+                gap: 10.5px;
+                font-size: 12px;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                }
+            }
         }
     }
 }
