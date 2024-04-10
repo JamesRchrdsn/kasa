@@ -9,7 +9,7 @@ function RatingStars({ rating }) {
     <div className="rating-stars">
       {[...Array(filledStars)].map((_, index) => (
         <svg
-          key={`filled-star-${index}`} // Clé unique basée sur l'index
+          key={`filled-star-${index}`}
           xmlns="http://www.w3.org/2000/svg"
           width="14"
           height="14"
@@ -21,7 +21,7 @@ function RatingStars({ rating }) {
       ))}
       {[...Array(emptyStars)].map((_, index) => (
         <svg
-          key={`empty-star-${index}`} // Clé unique basée sur l'index
+          key={`empty-star-${index}`}
           xmlns="http://www.w3.org/2000/svg"
           width="14"
           height="14"
