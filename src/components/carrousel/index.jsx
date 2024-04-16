@@ -21,7 +21,6 @@ function Carousel({ images }) {
   };
 
   const showArrows = images.length > 1;
-  const showImageCount = images.length > 1;
 
   if (images.length === 0) {
     return null;
@@ -62,11 +61,9 @@ function Carousel({ images }) {
           </svg>
         </button>
       )}{" "}
-      {showImageCount && (
-        <div className="image-count">
-          {currentIndex + 1}/{images.length}
-        </div>
-      )}
+      <div className="image-count">
+        {currentIndex + 1}/{images.length}
+      </div>
     </div>
   );
 }
